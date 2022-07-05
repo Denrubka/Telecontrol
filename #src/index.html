@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телеконтроль-2</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+<div class="page-wrapper">
+    @@include('_header.html')
+    @@include('_hero.html')
+    @@include('_choice.html')
+    @@include('_cta.html')
+    @@include('_news.html')
+    @@include('_about.html')
+    @@include('_partners.html')
+    @@include('_footer.html')
+    <div class="modal-search">
+        <div class="container">
+            <div class="modal-search-head">
+                <h3 class="modal-search__title">Поиск по сайту</h3>
+                <div class="modal-search__close">
+                    <svg class="icon icon-close" width="21" height="21">
+                        <use href="./img/icons/icons.svg#close"></use>
+                    </svg>
+                </div>
+            </div>
+            <form action="/" class="form modal-search-content">
+                <label class="modal-search__label">
+                    <input type="text" class="modal-search__input">
+                    <span class="modal-search__text">Поиск</span>
+                </label>
+                <button class="modal-search__button btn btn--blue">Поиск</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<script src="./js/script.min.js"></script>
+</body>
+
+</html>

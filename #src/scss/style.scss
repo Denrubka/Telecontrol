@@ -1,0 +1,118 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@import "slick";
+@import "slick-theme";
+@import "fonts";
+@import "grid";
+@import "normalize";
+@import "header";
+@import "hero";
+@import "choice";
+@import "cta";
+@import "news";
+@import "about";
+@import "partners";
+@import "footer";
+@import "modal-search";
+@import "catalog";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+path {
+  fill: inherit;
+  stroke: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.line {
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #fff;
+}
+
+.section {
+  margin: 100px 0;
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__title {
+    font-family: "Cuprum", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 46px;
+    color: #30549a;
+  }
+  &__link {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    text-decoration: none;
+    border-bottom: 2px solid #30549a;
+    padding-bottom: 6px;
+  }
+  &--bg {
+    background: url("../img/section-bg-left.png") no-repeat left center,
+      url("../img/section-bg-right.png") no-repeat right center;
+  }
+}
+
+.btn {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  border: none;
+  max-width: 270px;
+  width: 100%;
+  padding: 22px 30px 18px 30px;
+  border-radius: 2px;
+  &--blue {
+    background: linear-gradient(180deg, #30549a 0%, #103378 100%);
+  }
+  &:active {
+    background: linear-gradient(180deg, #4571c7 0%, #1948a4 100%);
+  }
+}
+.icon {
+  &--nav {
+    fill: none;
+    stroke: black;
+  }
+}

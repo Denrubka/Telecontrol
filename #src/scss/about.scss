@@ -1,0 +1,54 @@
+.about {
+  &-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &-card {
+    max-width: 370px;
+    padding: 35px 69px 80px 30px;
+    border-radius: 2px 2px 0px 0px;
+    &--blue {
+      background: url("../img/about-bg.png") no-repeat right bottom,
+        linear-gradient(
+          25.7deg,
+          rgba(48, 84, 154, 0.75) 0%,
+          rgba(40, 101, 156, 0.75) 93.23%,
+          rgba(39, 102, 156, 0.75) 100%
+        );
+    }
+    &--green {
+      background: url("../img/about-bg.png") no-repeat right bottom,
+        linear-gradient(
+          25.7deg,
+          rgba(37, 130, 102, 0.9) 0%,
+          rgba(39, 156, 149, 0.9) 100%
+        );
+    }
+    &--purple {
+      background: url("../img/about-bg.png") no-repeat right bottom,
+        linear-gradient(
+          24.38deg,
+          rgba(37, 40, 130, 0.9) 0%,
+          rgba(39, 86, 156, 0.9) 100%
+        );
+    }
+    &__title {
+      font-family: "Cuprum", sans-serif;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 46px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-family: "Cuprum", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      color: #ffffff;
+      margin-top: 20px;
+    }
+  }
+}

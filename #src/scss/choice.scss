@@ -1,0 +1,137 @@
+.tabs {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e0e0e0;
+    z-index: -1;
+  }
+  &-slider {
+    & .slick-list {
+      margin: 0 35px;
+    }
+  }
+  &-prev,
+  &-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    top: 8%;
+    width: 16px;
+    height: 16px;
+    & svg {
+      fill: #30549a;
+    }
+    &:before {
+      display: none;
+    }
+  }
+  &-next {
+    right: 0;
+  }
+  &-prev {
+    left: 0;
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+  &__tab {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+    border: none;
+    background: none;
+    padding-bottom: 18px;
+    cursor: pointer;
+    &--active {
+      color: #000;
+      font-weight: 600;
+      border-bottom: 2px solid #30549a;
+    }
+  }
+}
+.choice {
+  &-goods {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  &-good {
+    max-width: 286px;
+    border: 1px solid #f5f5f5;
+    transition: all 0.2s ease;
+    &:hover {
+      position: relative;
+      z-index: 99;
+      box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.12);
+      & .choice-good__link {
+        background: #30549a;
+        color: #fff;
+      }
+    }
+    &-top {
+      box-shadow: inset 0px 0px 32px rgba(0, 0, 0, 0.04);
+    }
+    &__title {
+      font-family: "OpenSans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    &__desc {
+      font-family: "OpenSans", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #666666;
+      margin-bottom: 27.5px;
+    }
+    &-bottom {
+      padding: 20px 22px 22px 22px;
+    }
+    &-footer {
+      display: flex;
+      align-items: center;
+    }
+    &__link {
+      font-family: "OpenSans", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 15px;
+      letter-spacing: 0.02em;
+      text-transform: lowercase;
+      color: #595959;
+      padding: 8px 20px;
+      text-decoration: none;
+      border: 1px solid #f0f0f0;
+      border-radius: 2px;
+      margin-right: 18px;
+      transition: all 0.2s ease;
+    }
+    &__price {
+      font-family: "OpenSans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #30549a;
+      &--ruble {
+        font-family: "gothampro", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #666666;
+      }
+    }
+  }
+}

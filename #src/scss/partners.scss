@@ -1,0 +1,12 @@
+.partners {
+  &-cards {
+    display: flex;
+  }
+  &-card {
+    border: 1px solid #f5f5f5;
+    transition: all 0.2s ease;
+    &:hover {
+      box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
